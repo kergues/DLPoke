@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Pokédex</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+            crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Spirax|Ubuntu|Ubuntu+Mono" rel="stylesheet">
+        <link href="assets/css/fonts.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+          <title>Title of the document</title>
+        <!-- Material Icon CDN -->
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Materialize CSS CDN -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <!-- Your custom styles -->
+          <link rel="stylesheet" href="css/style.css">
+        <!-- Used as an example only to position the footer at the end of the page.
+        You can delete these styles or move it to your custom css file -->
+      </head>
+      <body>
+          <main>
+          <div class="container">
+            <div class="row">
+              <div class="col s12 flexbox">
+                  <div class="ball">
+                    <button class="waves-effect waves-light btn-ball" onclick="$('.tap-target').tapTarget('open')"></button>
+                      <div class="fixed-action-btn">
+                        <a id="menu" class="waves-effect waves-light btn-large btn-floating cyan" onclick="$('.tap-target').tapTarget('open')"><i class="material-icons">album</i></a>
+                      </div>
+                      <!-- Tap Target Structure -->
+                      <div class="tap-target red accent-4" data-activates="menu">
+                        <div class="tap-target-content white-text">
+                          <h3 class="texto-borde">&nbsp;&nbsp;&nbsp;PoKéDeX</h3>
+                          <img src="assets/img/hiclipart.com.png" alt="pikachu">
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="row grey darken-4 mt5 br10">
+              <div class="col s12 mt5">
+                <div class="logo"><h1 class="brand-logo texto-borde">PoKéDeX</h1></div> 
+                <div class="search">
+                  <form>
+                    <div class="input-group">
+                      <div class="input-field">
+                      <input id="search" type="search" name='q'>
+                      </div>
+                      <a onclick="getPokemonId()" class="input-group-addon btn"><i class="material-icons" >search</i></a>
+                      </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col">
+                    <div id="pokemon-container" class="pokemon-container mt3"></div>
+                    <div class="center mt3 mb3">
+                        <button class="waves-effect waves-light btn" onclick="cargarmas(More)"><i class="material-icons right">album</i>Cargar Más Pokemones</button>
+                    </div>                  
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal modal-fixed-footer">
+                      <div class="modal-content">
+                        <h4 id="modal-name" class="texto-borde center"></h4>
+                        <div class="row mt3">
+                            <div class="col s12 m4 center">
+                                <img id="modal-photo" src="" alt="" class="responsive-img"/>
+                                <div class="col s12 center">
+                                    <p>Tipo: <span id="type-pokemon"></span></p>
+                                    <p>Altura: <span id="height"></span></p>
+                                    <p>Peso: <span id="weight"></span></p>
+                                    <p>Orden: <span id="order"></span></p>
+                                </div>
+                            </div>
+                            <div class="col s12 m8 blue darken-1">
+                                <div class="description">
+                                    <p id="base_experience"></p>
+                                    <p>Habilidad: <span id="habilities"></span></p>
+                                    <p id="category">Categoría:
+                                    <span id="pokemon-category"></span></p>
+                                    <p>Experiencia base:
+                                    <span id="skill-number"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="chartContainer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn">Cerrar</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </main>
+        <footer class="page-footer grey darken-4">
+          <div class="footer-copyright">
+            <div class="container">
+               2020 Test Pokédex
+          </div>
+        </footer>
+        <!-- jQuery CDN -->
+          <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- Materialize JS CDN -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+          <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+          <script src="assets/js/script.js"></script>
+          <script src="assets/js/app.js"></script>
+      </body>
+    </html>
+    </body>
+</html>

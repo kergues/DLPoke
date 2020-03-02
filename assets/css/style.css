@@ -1,0 +1,191 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+body,
+html {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+      background: url('../img/pokemon-desktop.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      font-family: "Ubuntu", sans-serif;
+    }
+    
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+.ball {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 1%;
+    border-radius: 50%;
+    background: #212121;
+    padding: 10px;
+}
+.btn-ball{
+    background-image: url('../img/pokemon-1635610_1280.png');
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 135px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-size: cover;
+    background-position: center center;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-floating {
+  background: rgb(213,0,0)!important;
+  background: linear-gradient(180deg, rgba(213,0,0,1) 48%, rgba(0,0,0,1) 49%, rgba(0,0,0,1) 52%, rgba(255,255,255,1) 57%)!important;
+
+}
+.btn-floating i {
+  color: #000!important;
+  font-size: 1.2rem!important;
+
+}
+button, .btn {
+  background-color: #ffcb05!important;
+}
+button:focus, .btn:hover, .btn-large:hover {
+  background-color: #d50000!important;
+}
+.m20_0{ 
+  margin:1.5rem 0;
+}
+.mt5 {
+	margin-top: 5em!important;
+}
+.mt3 {
+	margin-top: 3rem!important;
+}
+.mb3{
+  margin-bottom: 3rem!important;
+}
+.br10{
+    border-radius: 10px;
+}
+.input-group{
+  display:inline-block;
+  font-family: "Ubuntu", sans-serif;
+}
+.input-group .input-field,
+.input-group .input-group-addon{
+  display:inline-block;
+}
+.input-field input[type="search"]:focus {
+  background-color: transparent!important;
+  color:#ffcb05!important;
+}
+.brand-logo {
+  color: #ffcb05!important;
+  font-size: 3rem!important;
+}
+.logo{
+  float: left;
+}
+.search{
+  float: right;
+}
+.texto-borde {
+  color: #ffcb05!important;
+  -webkit-text-stroke: 2px #3d7dca;
+  text-shadow: 2px 2px #003a70;
+  font-family: Pokemon Solid;
+}
+.card {
+  position: relative;
+  margin: .5rem 0 1rem 0;
+  background-color: transparent!important;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+}
+.card .card-image img {
+  width: 70%!important;
+  margin: 0 auto!important;
+}
+.card .card-image img:hover{
+  -webkit-transform: rotate(360deg)!important;
+  transform: rotate(360deg)!important;
+}
+.card .card-image .card-title {
+  color: #fff;
+  position: absolute;
+  bottom: -20px!important;
+  left: 1em;
+  padding: 0!important;
+}
+.card .card-content {
+    padding: 2em 0 1em 0;
+    border-radius: 0 0 2px 2px;
+    color: #fff;
+}
+.card .card-content .card-title {
+  display: block;
+  line-height: 32px;
+  margin-bottom: 0.4em;
+  margin-top: 1em;
+}
+.card .card-title {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+}
+.btn-floating:hover {
+    background-color:#d50000;
+    }
+
+span {
+  text-align: center;
+}
+
+.btn, .btn-large:hover {
+  color: #fff;
+  background-color:red;
+}
+.height,
+.weight,
+.sex,
+.category,
+.skill {
+  font-size: 17px;
+}
+.description{
+  padding: 20pt;
+}
+#modal-name {
+  font-family: Pokemon Solid;
+}
+@media only screen and (min-width: 993px) {
+    .container {
+     width:80%;
+    }
+   }
+@media only screen and (max-width: 540px) {
+  .brand-logo {
+    display: none;
+  }
+  .search{
+    margin-top: 3rem;
+  }
+}
